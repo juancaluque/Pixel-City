@@ -14,6 +14,7 @@
 		A48F1E7723D38C2C00A7D2A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48F1E7523D38C2C00A7D2A2 /* Main.storyboard */; };
 		A48F1E7923D38C3000A7D2A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48F1E7823D38C3000A7D2A2 /* Assets.xcassets */; };
 		A48F1E7C23D38C3000A7D2A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48F1E7A23D38C3000A7D2A2 /* LaunchScreen.storyboard */; };
+		A48F1E8823D3C0A800A7D2A2 /* Droppable Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48F1E8723D3C0A800A7D2A2 /* Droppable Pin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		A48F1E7823D38C3000A7D2A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A48F1E7B23D38C3000A7D2A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A48F1E7D23D38C3000A7D2A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A48F1E8723D3C0A800A7D2A2 /* Droppable Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Droppable Pin.swift"; sourceTree = "<group>"; };
 		B715828DFF0184210DF9D87A /* Pods_Pixel_City.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixel_City.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 		A48F1E8423D38CFB00A7D2A2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A48F1E8723D3C0A800A7D2A2 /* Droppable Pin.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			files = (
 				A48F1E7423D38C2C00A7D2A2 /* MapVC.swift in Sources */,
 				A48F1E7023D38C2C00A7D2A2 /* AppDelegate.swift in Sources */,
+				A48F1E8823D3C0A800A7D2A2 /* Droppable Pin.swift in Sources */,
 				A48F1E7223D38C2C00A7D2A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
