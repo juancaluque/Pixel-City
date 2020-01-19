@@ -15,6 +15,8 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
 
     // OUTLETS
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var pullUpView: UIView!
+    @IBOutlet weak var pullUpViewHeightConstrain: NSLayoutConstraint!
     
 
 
@@ -31,6 +33,8 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
     var locationManager = CLLocationManager()
     let authorizationStatus = CLLocationManager.authorizationStatus()
     let regionRadius: Double = 1000
+    var spinner: UIActivityIndicatorView?
+    var screenSize = UIScreen.main.bounds
     
     // LIFECYCLES
     override func viewDidLoad() {
@@ -39,6 +43,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
         locationManager.delegate = self
         configureLocationServices()
         addDoubleTap()
+        
     }
     
     // FUNCS
@@ -48,12 +53,38 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
         doubleTap.delegate = self
         mapView.addGestureRecognizer(doubleTap)
     }
+    func addSwipe() {
+        let swipe = UISwipeGestureRecognizer(target: self, action: #selector(animateViewDown))
+        swipe.direction = .down
+        pullUpView.addGestureRecognizer(swipe)
+    }
     func removePin() {
         for annotation in mapView.annotations {
             mapView.removeAnnotation(annotation)
         }
     }
-
+    func animateViewUp(){
+        pullUpViewHeightConstrain.constant = 300
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    func addSpinner() {
+        spinner = UIActivityIndicatorView()
+        spinner?.center = CGPoint(x: (screenSize.width / 2) - ((spinner?.frame.width)! / 2), y: 150)
+        spinner?.style = UIActivityIndicatorView.Style.large
+        spinner?.color = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
+        spinner?.startAnimating()
+        pullUpView.addSubview(spinner!)
+    }
+    
+    //   OBJC FUNC
+    @objc func animateViewDown() {
+        pullUpViewHeightConstrain.constant = 1
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+    }
 }
 
 // EXTENSIONS
@@ -77,6 +108,9 @@ extension MapVC: MKMapViewDelegate {
     
     @objc func dropPin(sender: UITapGestureRecognizer){
         removePin()
+        animateViewUp()
+        addSwipe()
+        addSpinner()
         
         let touchPoint = sender.location(in: mapView)
         let touchCoordinate = mapView.convert(touchPoint, toCoordinateFrom: mapView)

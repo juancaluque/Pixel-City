@@ -24,7 +24,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double tap to drop a Pin and view Photos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daV-HJ-FtR">
                                         <rect key="frame" x="24" y="22" width="366" height="26"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="366" id="Fs7-hp-bkC"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="366" id="Fs7-hp-bkC"/>
                                             <constraint firstAttribute="height" constant="26" id="bM4-g9-wI2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
@@ -75,7 +75,7 @@
                             <constraint firstItem="MLZ-zg-JhP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5aw-QI-5aQ"/>
                             <constraint firstItem="5ns-f9-Zag" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5g0-97-3IA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o7p-aE-DmJ" secondAttribute="trailing" constant="20" id="9T9-ec-l2V"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o7p-aE-DmJ" secondAttribute="bottom" constant="20" id="CrB-Jx-C8e"/>
+                            <constraint firstItem="ZHq-pL-cXy" firstAttribute="top" secondItem="o7p-aE-DmJ" secondAttribute="bottom" constant="20" id="9Wy-bG-lhA"/>
                             <constraint firstItem="ZHq-pL-cXy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KfM-NU-35w"/>
                             <constraint firstItem="MLZ-zg-JhP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="a3y-EJ-frf"/>
                             <constraint firstItem="5ns-f9-Zag" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hX5-HC-Qy2"/>
@@ -89,6 +89,8 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="MLZ-zg-JhP" id="BkV-us-RVI"/>
+                        <outlet property="pullUpView" destination="ZHq-pL-cXy" id="bNm-sZ-rAg"/>
+                        <outlet property="pullUpViewHeightConstrain" destination="HgT-xl-PiM" id="w9y-Gl-T1a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
