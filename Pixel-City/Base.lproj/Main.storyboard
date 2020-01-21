@@ -97,6 +97,55 @@
             </objects>
             <point key="canvasLocation" x="130.43478260869566" y="127.23214285714285"/>
         </scene>
+        <!--PopVC-->
+        <scene sceneID="Q1Z-pc-kH8">
+            <objects>
+                <viewController storyboardIdentifier="PopVC" id="Dd6-Iy-TZJ" customClass="PopVC" customModule="Pixel_City" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XkQ-SC-GWV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TLP-Hd-GdW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBY-CQ-ByY">
+                                <rect key="frame" x="57" y="792" width="300" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double-tap to dismiss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sg5-pv-Ouw">
+                                        <rect key="frame" x="18.5" y="7" width="263.5" height="36"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="57y-sI-b5f"/>
+                                    <constraint firstItem="Sg5-pv-Ouw" firstAttribute="centerY" secondItem="QBY-CQ-ByY" secondAttribute="centerY" id="Vwr-mS-a5I"/>
+                                    <constraint firstItem="Sg5-pv-Ouw" firstAttribute="centerX" secondItem="QBY-CQ-ByY" secondAttribute="centerX" id="f1b-Jb-MZ4"/>
+                                    <constraint firstAttribute="height" constant="50" id="kR3-jh-FKV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QBY-CQ-ByY" firstAttribute="centerX" secondItem="XkQ-SC-GWV" secondAttribute="centerX" id="7cf-cd-Jmv"/>
+                            <constraint firstItem="YR9-hR-tig" firstAttribute="trailing" secondItem="TLP-Hd-GdW" secondAttribute="trailing" id="Eo7-Zl-HOz"/>
+                            <constraint firstItem="YR9-hR-tig" firstAttribute="bottom" secondItem="QBY-CQ-ByY" secondAttribute="bottom" constant="20" id="XJP-sF-Jmr"/>
+                            <constraint firstItem="TLP-Hd-GdW" firstAttribute="leading" secondItem="YR9-hR-tig" secondAttribute="leading" id="sDT-BN-ve2"/>
+                            <constraint firstItem="YR9-hR-tig" firstAttribute="bottom" secondItem="TLP-Hd-GdW" secondAttribute="bottom" id="v19-kx-3wk"/>
+                            <constraint firstItem="TLP-Hd-GdW" firstAttribute="top" secondItem="YR9-hR-tig" secondAttribute="top" id="xnm-Av-AuR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YR9-hR-tig"/>
+                    </view>
+                    <connections>
+                        <outlet property="popImage" destination="TLP-Hd-GdW" id="CqW-Sz-mGA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2T-MX-uxg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="859.4202898550725" y="127.23214285714285"/>
+        </scene>
     </scenes>
     <resources>
         <image name="locationButton" width="67" height="67"/>

@@ -17,6 +17,7 @@
 		A48F1E8823D3C0A800A7D2A2 /* Droppable Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48F1E8723D3C0A800A7D2A2 /* Droppable Pin.swift */; };
 		A4D7752123D5314000CEE121 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D7752023D5314000CEE121 /* PhotoCell.swift */; };
 		A4D7752323D5372100CEE121 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D7752223D5372100CEE121 /* Constants.swift */; };
+		A4D7752523D7397300CEE121 /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D7752423D7397300CEE121 /* PopVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		A48F1E8723D3C0A800A7D2A2 /* Droppable Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Droppable Pin.swift"; sourceTree = "<group>"; };
 		A4D7752023D5314000CEE121 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		A4D7752223D5372100CEE121 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A4D7752423D7397300CEE121 /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 		B715828DFF0184210DF9D87A /* Pods_Pixel_City.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pixel_City.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				A48F1E7323D38C2C00A7D2A2 /* MapVC.swift */,
+				A4D7752423D7397300CEE121 /* PopVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			files = (
 				A48F1E7423D38C2C00A7D2A2 /* MapVC.swift in Sources */,
 				A4D7752123D5314000CEE121 /* PhotoCell.swift in Sources */,
+				A4D7752523D7397300CEE121 /* PopVC.swift in Sources */,
 				A48F1E7023D38C2C00A7D2A2 /* AppDelegate.swift in Sources */,
 				A48F1E8823D3C0A800A7D2A2 /* Droppable Pin.swift in Sources */,
 				A48F1E7223D38C2C00A7D2A2 /* SceneDelegate.swift in Sources */,

@@ -247,8 +247,9 @@ extension MapVC: UICollectionViewDelegate, UICollectionViewDataSource {
         
         return cell
     }
-    
-    
-    
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let popVC = storyboard?.instantiateViewController(identifier: "PopVC") as? PopVC else { return }
+        popVC.initData(forImage: imagesArray[indexPath.row])
+        present(popVC, animated: true, completion: nil)
+    }  
 }
